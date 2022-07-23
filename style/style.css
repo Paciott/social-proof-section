@@ -1,1 +1,177 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+/*colors*/
+/*size*/
+body {
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+body h1 {
+  font-weight: 700;
+  line-height: 1.7rem;
+  margin: 4rem auto 1rem auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: hsl(300deg, 43%, 22%);
+  max-width: 16rem;
+}
+body .description {
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 18.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: hsl(303deg, 10%, 53%);
+}
+
+#ratings {
+  margin: 2rem 0;
+}
+#ratings .rate {
+  background-color: hsl(300deg, 24%, 96%);
+  height: auto;
+  margin: 1rem auto;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+}
+#ratings .stars {
+  padding-top: 0.5rem;
+}
+#ratings p {
+  margin: 0;
+  padding: 0.5rem;
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+}
+
+.card {
+  background-color: hsl(300deg, 43%, 22%);
+  min-height: 13rem;
+  margin: 1rem auto;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+}
+.card .customer {
+  display: flex;
+  flex-direction: row;
+}
+.card img {
+  border-radius: 50%;
+  max-width: 2.5rem;
+  height: 2.5rem;
+  margin: 2rem 0 0 2rem;
+}
+.card h3 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1rem;
+  margin: 2rem 0 0rem 1rem;
+}
+.card .verified {
+  color: hsl(333deg, 80%, 67%);
+  margin: 0 0 0.5rem 1rem;
+}
+.card .comment {
+  color: hsl(0deg, 0%, 100%);
+  margin: 0;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.attribution a {
+  color: hsl(300deg, 43%, 22%);
+  transition: 0.2s linear;
+}
+.attribution a:hover {
+  color: black;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+  }
+}
+@media (min-width: 1400px) {
+  main {
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  main .presentation {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+  }
+  main .presentation h1 {
+    margin: 0 0 3rem 0;
+    padding: 0;
+    min-width: 25rem;
+    line-height: 2.5rem;
+    font-size: 3.5rem;
+  }
+  main .presentation .description {
+    margin: 0;
+    padding: 0;
+    max-width: 30rem;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  #ratings {
+    grid-column: 3/5;
+    margin: 1rem 0 0;
+  }
+  #ratings .rate {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.8rem;
+  }
+  #ratings .rate p {
+    padding-left: 1.5rem;
+  }
+  #ratings .rate:nth-of-type(1) {
+    margin-left: 0;
+  }
+  #ratings .rate:nth-of-type(3) {
+    margin-right: 0;
+  }
+  #cards {
+    grid-row: 2/3;
+    grid-column: span 4;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    min-height: 18rem;
+  }
+  #cards .card {
+    padding: 0.5rem;
+  }
+  #cards .card p {
+    padding-right: 0.5rem;
+  }
+  #cards .card:nth-of-type(1) {
+    align-self: flex-start;
+  }
+  #cards .card:nth-of-type(2) {
+    align-self: center;
+  }
+  #cards .card:nth-of-type(3) {
+    align-self: flex-end;
+  }
+  .attribution {
+    margin-top: 10rem;
+  }
+}/*# sourceMappingURL=style.css.map */
