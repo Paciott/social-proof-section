@@ -2,6 +2,7 @@
 /*colors*/
 /*size*/
 body {
+  margin: 0;
   height: 100%;
   font-family: "League Spartan", sans-serif;
   display: flex;
@@ -94,6 +95,7 @@ body .description {
 
 @media (min-width: 1100px) {
   body {
+    height: 100vh;
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
   }
   main {
