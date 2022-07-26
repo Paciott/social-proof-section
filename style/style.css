@@ -2,7 +2,7 @@
 /*colors*/
 /*size*/
 body {
-  height: 100vh;
+  height: 100%;
   font-family: "League Spartan", sans-serif;
   display: flex;
   flex-direction: column;
