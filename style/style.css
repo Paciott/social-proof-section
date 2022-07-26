@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat;
   background-position: top left, bottom right;
 }
@@ -94,7 +94,7 @@ body .description {
 
 @media (min-width: 600px) {
   body {
-    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
   }
 }
 @media (min-width: 1400px) {
