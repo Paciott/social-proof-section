@@ -118,14 +118,12 @@ body {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1100px) {
   body {
     background-image: url(../images/bg-pattern-top-desktop.svg),
       url(../images/bg-pattern-bottom-desktop.svg);
   }
-}
 
-@media (min-width: 1400px) {
   main {
     margin-top: 15vh;
     display: grid;
